@@ -8,7 +8,7 @@ import org.graalvm.nativeimage.impl.HeapDumpSupport;
 import java.io.IOException;
 
 @TargetClass(className = "org.graalvm.nativeimage.VMRuntime")
-public class Target_org_graalvm_nativeimage_VMRuntime
+final class Target_org_graalvm_nativeimage_VMRuntime
 {
     @Substitute
     public static void dumpHeap(String outputFile, boolean live) throws IOException
